@@ -1,4 +1,6 @@
-                /* Partie CSS */
+/* Partie CSS */
+
+/* CSS général  */
 
 @font-face {
     font-family: 'ralewayregular';
@@ -8,33 +10,81 @@
     font-style: normal;
 }
 
-html, body
-{
-    margin: 0
-}
-
-body > *:not(footer)
-{
-    padding: 2em 2em 0em 2em;
-}
-
 *
 {
     font-family: raleway ;
 }
 
-                /* Header */
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body > *:not(footer)
+{
+    padding: 0.5em 2em 0em 3em;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+/* Header */
 
 .header_logo_links
 {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_links
+.header_links 
 {
     display: flex;
+}
+
+nav 
+{
+    display: flex;
+}
+
+.hosting_link, .activities_link
+{
+    margin-right: 2em;
+    color: rgb(32, 32, 32);
+}
+
+.singnup_link
+{
+    color: #0065FC;
+}
+
+a:visited
+{
+    color: rgb(32, 32, 32);
+}
+
+.hosting_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC ;
+    padding-top: 1em;
+}
+
+.activities_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC ;
+    padding-top: 1em;
+}
+
+.singnup_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC ;
+    padding-top: 1em;
 }
 
 .nav a
@@ -47,54 +97,7 @@ body > *:not(footer)
     padding: 1em;
 }
 
-.hosting_link
-{
-    margin-right: 45px; 
-    color: rgb(32, 32, 32);
-}
-
-.activity_link
-{
-    color: rgb(32, 32, 32);
-}
-
-.singnup_link
-{
-    margin-left: 45px;
-}
-
-a:link
-{
-    text-decoration: none;
-}
-
-.hosting_link:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC ;
-    padding-top: 2em;
-}
-
-.activities_link:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC ;
-    padding-top: 2em;
-}
-
-.singnup_link:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC ;
-    padding-top: 2em;
-}
-
-a:visited
-{
-    color: black
-}
-
-                /* Section recherche */
+/* Section Recherche */
 
 .search_title
 {
@@ -106,20 +109,24 @@ a:visited
     margin: -0.3em 0 1em 0;
 }
 
-                /* Formulaire de recherche */
+/* Formulaire de recherche */
+
+form
+{
+    width: 300px;
+}
 
 .formulary
 {
     display: flex;
-    align-items: center;
     margin: 1.5em 0 1.5em 0;
 }
 
 .formulary_icon
 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: large;
     border: 1px #F2F2F2  solid;
     background-color: #F2F2F2 ;
@@ -129,18 +136,20 @@ a:visited
     height: 25px;
 }
 
-input
+.formulary_input
 {
     font-weight: bold;
     border: 1px solid #F2F2F2;
     border-right: none;
     border-left: none;
     padding: 16px 1em 1em 1em ;
+    width: 100%;
 }
 
 .formulary_button
 {
     color: white;
+    font-weight: bold;
     background-color: #0065FC;
     border: 1px #0065FC solid;
     border-radius: 0 15px 15px 0;
@@ -154,7 +163,7 @@ input
     border: 1px solid #F2F2F2 ;
 }
 
-                /* Filtres de recherche */
+/* Filtres de recherche */
 
 .search_filters
 {
@@ -168,6 +177,11 @@ input
 {
     margin-right: 1em;
     font-size: 16px;
+}
+
+.search_filter_block
+{
+    display: flex;
 }
 
 .search_filter_filter
@@ -188,8 +202,8 @@ input
     width: 3em;
     height: 3em;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: -2px 10px -2px -2px;
 }
 
@@ -199,21 +213,22 @@ input
     align-items: center;
 }
 
-.info_text
-{
-    margin-left: 0.1em;
-}
-
 .info_icon
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     color:#0065FC;
     border: 1px #d8d6d6 solid;
     border-radius: 50px;
-    align-items: center;
     width: 25px;
     height: 25px;
+    font-size: small;
+}
+
+.info_text
+{
+    margin-left: 0.5em;
 }
 
 .search_filter_filter:hover
@@ -226,7 +241,7 @@ span:hover
     color: #0065FC;
 }
 
-                /* Section hébergements */
+/* Section hébergements */
 
 .hosting_section
 {
@@ -235,11 +250,20 @@ span:hover
 
 .hosting_img
 {
-    width: 300px;
+    width: 250px;
     height: 120px;
     border-radius: 15px 15px 0 0px;
-    margin-bottom: -1em;
     object-fit: cover;
+}
+
+.hosting_block
+{
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 1em 0 2em 0; 
+    margin-right: 1em;
+    width: 100%;
+    height: 100%;
 }
 
 .hosting_articles
@@ -248,26 +272,28 @@ span:hover
     flex-wrap: wrap;
 }
 
-.hosting_block
-{
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    padding: 1em 0 2em 0; 
-    width: 70%;
-    height: 70%;
-}
-
 .hosting_fig
 {
     background-color: white;
     border-radius: 15px;
     padding: 5px; 
     box-shadow: 0 0px 15px rgb(206, 205, 205);
+    margin: 2em;
 }
 
-.hosting_options
+.hosting_figcaption
 {
-    gap: 1em;
+    margin: -1em 0 1em 1em;
+}
+
+.hosting_fig_title
+{
+    margin-bottom: -0.5em;
+}
+
+.hosting_icon
+{
+    margin-top: -0.5em;
 }
 
 .active
@@ -280,11 +306,6 @@ span:hover
     color: #F2F2F2;
 }
 
-.hosting_figcaption
-{
-    padding: 0.1em 0 0.3em 0.5em;
-}
-
 .hosting_title
 {
     margin-left: 1.5em;
@@ -294,26 +315,24 @@ span:hover
 {
     margin-left: 2em;
 }
-                /* Aside */ 
-                
-.hosting_aside
+
+/* Aside */ 
+
+.aside_block
 {
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    padding: 1em 2em 1em 2em; 
-    width: 25em;
-    margin-left: 2em;
-}
+    margin: 1em;
+}                
 
 .aside_header
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .aside_title
 {
-    padding: 0 4.9em 0 0; 
+    padding-right: 5em;
 }
 
 .fa-chart-line
@@ -321,31 +340,42 @@ span:hover
     font-size: 1.5em;
 }        
 
+.hosting_aside
+{
+    background-color: #F2F2F2;
+    border-radius: 1em;
+}
+
+.aside_img
+{
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
 .aside_options
 {
     display: flex;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0px 15px rgb(206, 205, 205);
-    padding: 5px; 
-    margin: 1em 0 2em 0;
-    
+    margin: 2em 0 1em 0;
+    padding: 5px;
 }
 
-.aside_img
+.aside_text
 {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px 0 0 15px;
+    margin: -1em 0 2em 0;
 }
 
 .aside_figcaption
 {
-    padding: 0 0 0.3em 0.5em;
+    margin: 0 0 0 1.5em;;
 }
 
-                /* Section activités */
-            
+/* Section activités */
+
 .grid-block
 {
     width: 90%;
@@ -422,7 +452,7 @@ span:hover
 .footer_block
 {
     margin-top: 8em;
-    border: #F2F2F2 solid 12px;
+    padding: 1em 0 1em 1em;
     background-color: #F2F2F2;
     width: 100%;
     display: flex;
@@ -430,39 +460,137 @@ span:hover
 
 .footer_column
 {
-    padding: 0 200px 0 2em;
+    margin: 0 200px 0 2em;
 }
 
 .footer_column_link
 {
-   
     display: flex ;
     color: rgb(32, 32, 32);
-    padding-bottom: 15px;
+    padding-bottom: 1em;
 }
 
-
-            /* Partie Responsive */
-
-            /* Header mobile */
+            /* Partie Responsive - Version mobile */
 
 @media screen and (max-width: 600px)
 {
 
+/* CSS général*/
+
+    body > *:not(footer)
+    {
+        padding: 0;
+    }
+
+/* Header */
+
+
     .header_logo_links
     {
         display: grid;
-        grid-template-columns: repeat(3, 30%) ;
-        grid-template-rows: repeat(2, 120%);
-    }
-    
-    .header_signup
-    {
-        grid-area: 1/2/1/2;
+        grid-template-columns:repeat(4, 20%);
+        grid-template-rows: repeat(2,150%);
     }
 
     .hosting_link
     {
         grid-area: 2/-1/2/-1;
     }
+
+    .activities_link
+    {
+        grid-area: 2/-2/2/-2;
+    }
+
+    .singnup_link
+    {
+        grid-area: 1/2/1/2;
+    }
+
+/* Formulaire de recherche */
+
+    form
+    {
+        justify-content: center;
+        width: 100%;
+    }
+
+/* Filtre de recherche */
+
+    .search_filter_block
+    {
+        flex-wrap: wrap;
+    }
+
+    .search_filters
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search_filter_filter
+    {
+        margin: 5px;
+    }
+
+/* Section Hebergements */
+
+    .hosting_block
+    {
+        background-color: white;
+    }
+
+    .hosting_section
+    {
+        flex-direction: column-reverse;
+    }
+
+    .hosting_img
+    {
+        width: 350px;
+    }
+
+    .hosting_title
+    {
+        font-size: x-large;
+    }
+
+    .hosting_options
+    {
+        margin-top: -2em;
+    }
+
+    .hosting_fig
+    {
+        margin-bottom: 1em;
+
+    }
+
+/* Aside */ 
+
+    .aside_title
+    {
+        font-size: x-large;
+    }
+
+    .aside_options
+    {
+        margin-top: 1em;
+    }
+
+    .hosting_aside
+    {
+        margin-bottom: 1em;
+    }
+
+/* Section Activités */ 
+
+
+/* Footer */
+
+    .footer_block
+    {
+        flex-direction: column;
+    }
+
 }
