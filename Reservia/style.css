@@ -28,56 +28,54 @@ a:link
 
 /* Header */
 
-/* Header */
-
 .header_block
 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em 2em 0em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em 0em 3em;
 }
 
 .hosting_link, .activities_link
 {
-  margin-right: -50em;
-  color: rgb(32, 32, 32);
-  border-top: 2px solid transparent ;
+    margin-right: -50em;
+    color: rgb(32, 32, 32);
+    border-top: 2px solid transparent ;
 }
 
 .signup_link
 {
-  color: #0065FC;
-  font-weight: bold;
-  border-top: 2px solid transparent ;
+    color: #0065FC;
+    border-top: 2px solid transparent ;
 }
 
 a:visited
 {
-  color: rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
 }
 
 .hosting_link:hover
 {
-  color: #0065FC;
-  border-top-color: #0065FC ;
+    color: #0065FC;
+    border-top-color: #0065FC ;
 }
 
 .activities_link:hover
 {
-  color: #0065FC;
-  border-top-color: #0065FC ;
+    color: #0065FC;
+    border-top-color: #0065FC ;
 }
 
 .signup_link:hover
 {
-  color: #0065FC;
-  border-top-color: #0065FC ;
+    color: #0065FC;
+    border-top-color: #0065FC ;
+    
 }
 
 a
 {
-  padding: 1em;
+    padding: 1em;
 }
 
 /* Section Recherche */
@@ -148,11 +146,14 @@ form
 {
     display: none;
     color: white;
-    font-weight: bold;
+}
+
+.button_icon
+{
+    display: flex;
     background-color: #0065FC;
     border: 15px #0065FC solid;
     border-radius: 15px;
-    margin-left: -20px;
 }
 
 .formulary_button:hover
@@ -502,9 +503,6 @@ span:hover
 
             /* Partie Responsive - Version mobile */
 
-@media screen and (max-width: 600px)
-{
-
 /* Header */
 
 @media screen and (max-width: 600px)
@@ -555,7 +553,7 @@ span:hover
     {
         border-bottom-color: #0065FC ;
     }
-}
+
 
 /* Formulaire de recherche */
 
@@ -579,6 +577,11 @@ span:hover
     .fa-search
     {
         display: block;
+        padding: 2px;
+    }
+
+    .button_icon
+    {
         width: 30px;
     }
 
