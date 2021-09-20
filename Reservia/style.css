@@ -28,56 +28,61 @@ a:link
 
 /* Header */
 
-.header_block
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 2em 0em 3em;
+.header_block {
+  display: flex;
+  padding: 3em 2em 0em 3em;
 }
 
-.hosting_link, .activities_link
-{
-    margin-right: -50em;
-    color: rgb(32, 32, 32);
-    border-top: 2px solid transparent ;
+.logo {
+  flex-grow: 1;
+  padding: 5px 10px 10px 0;
+}
+
+.hosting {
+  padding: 5px 10px 10px 40px;
+}
+
+.activities {
+  padding: 5px 10px 10px 40px;
+}
+
+.signup {
+  color: #0065fc;
+  padding: 5px 10px 10px 40px;
+}
+
+.hosting_link,
+.activities_link {
+  color: rgb(32, 32, 32);
+  padding:20px;
 }
 
 .signup_link
 {
-    color: #0065FC;
-    border-top: 2px solid transparent ;
+  padding:20px;
 }
 
-a:visited
-{
-    color: rgb(32, 32, 32);
+a:visited {
+  color: rgb(32, 32, 32);
 }
 
-.hosting_link:hover
-{
-    color: #0065FC;
-    border-top-color: #0065FC ;
+.hosting_link:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 3em;
 }
 
-.activities_link:hover
-{
-    color: #0065FC;
-    border-top-color: #0065FC ;
+.activities_link:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 3em;
 }
 
-.signup_link:hover
-{
-    color: #0065FC;
-    border-top-color: #0065FC ;
-    
+.signup_link:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 3em;
 }
-
-a
-{
-    padding: 1em;
-}
-
 /* Section Recherche */
 
 .search_section
@@ -505,55 +510,81 @@ span:hover
 
 /* Header */
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 600px) 
 {
-    .header_block
-    {
-        font-size: large;
-        display:grid;
-        padding: 0;
-    }
-  
-    .header_logo
-    {
-        grid-area: 1/1/1/1;
-        width: 100%;
-        padding: 1em;
-    }
-  
-    .hosting_link
-    {
-        grid-area: 2/1/2/1 ;
-        border-bottom: 2px solid #F2F2F2 ;
-        border-top: none;
-        padding-left: 4em;
-    }
-  
-    .activities_link
-    {
-        grid-area: 2/2/2/2 ;
-        border-bottom: 2px solid #F2F2F2 ;
-        border-top: none;
-        margin-left: -5em;
-    }
-  
-    .signup_link
-    {
-        grid-area: 1/2/1/2;
-        border-top: none;
-        padding: 1em 2em 0 0;
-    }
-  
-    .hosting_link:hover
-    {
-        border-bottom-color: #0065FC ;
-    }
-  
-    .activities_link:hover
-    {
-        border-bottom-color: #0065FC ;
-    }
+  .header_block {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
 
+  .logo {
+    grid-area: 1/1/1/1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left:3em;
+  }
+
+  .hosting {
+    grid-area: 2/1/2/1;
+    border-bottom: 2px solid transparent;
+    padding-bottom:10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .activities {
+    grid-area: 2/2/2/2;
+    border-bottom: 2px solid transparent;
+    padding-bottom:10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .signup {
+    grid-area: 1/2/1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:2em;
+  }
+
+  .signup_link, .hosting_link, .activities_link
+  {
+    padding:0px;
+  }
+
+  .hosting_link:hover {
+    border-top:none;
+  }
+
+  .activities_link:hover {
+    border-top:none;
+  }
+  
+  .hosting:hover
+  {
+    border-bottom-color:#0065fc;
+  }
+  
+  .activities:hover {
+    border-bottom-color:#0065fc;
+  }
+
+  .activities_link:hover{
+      padding-top: 0;
+  }
+
+  .hosting_link:hover{
+    padding-top: 0;
+}
+  
+  .signup_link:hover
+  {
+    border-top:none;
+    padding-top: 0em;
+  }
 
 /* Formulaire de recherche */
 
