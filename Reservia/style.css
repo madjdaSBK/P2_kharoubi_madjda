@@ -155,10 +155,11 @@ form
 
 .button_icon
 {
-    display: flex;
+    display: none;
     background-color: #0065FC;
     border: 15px #0065FC solid;
     border-radius: 15px;
+    
 }
 
 .formulary_button:hover
@@ -614,6 +615,7 @@ span:hover
     .button_icon
     {
         width: 30px;
+        display: flex;
     }
 
     .formulary_input
@@ -624,10 +626,20 @@ span:hover
 
     .fa-search:hover
     {
-        color: #0065FC;
-        background-color: #F2F2F2 ;
-        border: 15px solid #F2F2F2 ;
+        color: #0065fc;
     }
+
+    .fas:hover
+    {
+        color: #0065fc;
+    }
+
+    .button_icon:hover
+    {
+        background-color: #F2F2F2 ;
+        border-color:#F2F2F2;
+    }
+    
 
 /* Filtre de recherche */
 
@@ -696,8 +708,6 @@ span:hover
     {
         margin-top: 0em;
     }
-
-
 
 /* Section Activités */ 
 
