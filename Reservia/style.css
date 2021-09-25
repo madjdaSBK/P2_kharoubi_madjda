@@ -330,12 +330,15 @@ span:hover
     color: #F2F2F2;
 }
 
-
-
 .show_more
 {
     margin-left: 2em;
 }
+
+.hosting_fig:hover {
+    transform: scale(1.05);
+    transition: ease 0.3s;
+  }
 
 /* Aside */ 
 
@@ -382,8 +385,9 @@ span:hover
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0px 15px rgb(206, 205, 205);
-    margin: 1em 0 1em 0;
+    margin: 1em 0 2em 0;
     padding: 5px;
+    height: 150px;
 }
 
 .aside_text
@@ -395,6 +399,11 @@ span:hover
 {
     margin: 0 0 0 1.5em;;
 }
+
+.aside_options:hover {
+    transform: scale(1.05);
+    transition: ease 0.3s;
+  }
 
 /* Section activités */
 
@@ -487,6 +496,10 @@ span:hover
     grid-area: 2/4/4/4;
 } 
 
+.grid-item:hover {
+    transform: scale(1.05);
+    transition: ease 0.3s;
+  }
 
 /* Footer */
 
@@ -510,6 +523,11 @@ span:hover
     display: flex ;
     color: rgb(32, 32, 32);
     padding-bottom: 1em;
+}
+
+.footer_column_link:hover
+{
+    color:#0065FC ;
 }
 
             /* Partie Responsive - Version mobile */
@@ -681,6 +699,7 @@ span:hover
     {
         background-color: white;
         padding: initial;
+        width: initial;
     }
 
     .hosting_header
@@ -696,7 +715,7 @@ span:hover
     .hosting_articles
     {
         flex-direction:column;
-        padding: 0 1em 0 1em;
+        padding: 0 0 0 1em;
     }
 
     .hosting_options
@@ -725,6 +744,7 @@ span:hover
     .aside
     {
         border-radius: initial;
+        width: initial;
     }
 
     .aside_block
