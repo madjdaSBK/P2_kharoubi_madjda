@@ -673,17 +673,17 @@ span:hover
         height: 48px;
     }
 
-    .fa-search:hover
+    .fa-search:focus
     {
         color: #0065fc;
     }
 
-    .fas:hover
+    .fas:focus
     {
         color: #0065fc;
     }
 
-    .button_icon:hover
+    .button_icon:focus
     {
         background-color: #F2F2F2 ;
         border-color:#F2F2F2;
@@ -921,6 +921,11 @@ span:hover
         flex-direction: column;
         padding:initial;
         padding-left: 2em;
+    }
+
+    .footer_column
+    {
+        margin: initial;
     }
 }
 
