@@ -265,7 +265,7 @@ span:hover
 {
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 1em 0 2em 0; 
+    padding: 1em 0 1em 0; 
     margin-right: 1em;
     width: 70%;
     flex-direction: row;
@@ -280,7 +280,7 @@ span:hover
 
 .hosting_title
 {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .hosting_img
@@ -295,6 +295,7 @@ span:hover
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hosting_fig
@@ -366,7 +367,7 @@ span:hover
 .fa-chart-line
 {
     font-size: 1.5em;
-    padding-left:5em;
+    padding-left:4em;
 }        
 
 .aside
@@ -388,7 +389,7 @@ span:hover
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0px 15px rgb(206, 205, 205);
-    margin: 1em 0 2em 0;
+    margin: 1em 1em 2em 1em;
     padding: 5px;
     height: 150px;
     cursor: pointer;
@@ -413,21 +414,22 @@ span:hover
 
 .activities_section
 {
-    padding: 1em 2em 2em 3em;
+    padding: 1em 0 2em 3em;
+    margin-top: 1em;
 }
 
 .grid_block
 {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40% 10% 50%;
+    grid-template-rows: 40% 20% 30%;
     width: 100%;
     height: 500px;
 }
 
 .grid-item
 {
-  padding: 0 1em 2em 0;
+  padding: 0 2em 2em 0;
 }
 
 .activities_card
@@ -479,6 +481,7 @@ span:hover
 .grid-item-2
 {
     grid-area: 1/2/2/2;
+    padding-bottom: initial;
 }
   
 .grid-item-3
@@ -493,12 +496,13 @@ span:hover
   
 .grid-item-5 
 {
-    grid-area: 1/4/2/4;
+    grid-area: 1/4/1/4;
 }
   
 .grid-item-6 
 {
     grid-area: 2/4/4/4;
+    padding-top: 3em;
 } 
 
 .grid-item:hover {
@@ -516,11 +520,12 @@ span:hover
 .footer_block
 {
     display: flex;
+    padding: 1em 0 0 3em;
 }
 
 .footer_column
 {
-    margin: 0 200px 0 2em;
+    margin-right: 270px;
 }
 
 .footer_column_link
@@ -539,35 +544,35 @@ span:hover
 
 /* Header */
 
-@media screen and (min-width: 200px) and (max-width:1000px) /* Version mobile (600px) et Tablette (1000px) */
+@media screen and (min-width: 200px) and (max-width:1366px) /* Version mobile (600px) et Tablette (1000px) */
 {
   .header_block {
     display: grid;
-    grid-template-rows: 2fr 2fr;
     grid-template-columns: 1fr 1fr;
-    padding: 1em 1em 0 1em;
+    padding: initial;
   }
 
   .logo {
     grid-area: 1/1/1/1;
     display: flex;
     justify-content: flex-start;
+    padding: 1em 0 1em 1em;
   }
 
   .hosting {
     grid-area: 2/1/2/1;
     border-bottom: 2px solid transparent;
-    padding-bottom:10px;
     display: flex;
     justify-content: center;
+    border-bottom-color:#F2F2F2;
   }
   
   .activities {
     grid-area: 2/2/2/2;
     border-bottom: 2px solid transparent;
-    padding-bottom:10px;
     display: flex;
     justify-content: center;
+    border-bottom-color:#F2F2F2;
   }
 
   .signup {
@@ -575,11 +580,22 @@ span:hover
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 1em 1em 1em 0;
   }
 
-  .signup_link, .hosting_link, .activities_link
+  .hosting_link
   {
-    padding:0px;
+    padding: initial;
+  }
+
+  .activities_link
+  {
+    padding: initial;
+  }
+
+  .signup_link
+  {
+    padding: initial;
   }
 
   .hosting_link:hover {
@@ -600,11 +616,11 @@ span:hover
   }
 
   .activities_link:hover{
-      padding-top: 0;
+      padding: initial;
   }
 
   .hosting_link:hover{
-    padding-top: 0;
+    padding: initial;
 }
   
   .signup_link:hover
@@ -617,7 +633,7 @@ span:hover
   
   .search_section
   {
-    padding: 0 1em 0em 1em;
+    padding: 0.5em 1em 0em 1em;
   }
 
 /* Formulaire de recherche */
@@ -708,6 +724,7 @@ span:hover
         background-color: white;
         padding: initial;
         width: initial;
+        margin-right: initial;
     }
 
     .hosting_header
@@ -723,17 +740,18 @@ span:hover
     .hosting_articles
     {
         flex-direction:column;
-        padding: 0 0 0 1em;
     }
 
     .hosting_options
     {
         margin-bottom: 1em;
+        padding: 0 1em 0 1em;
     }
 
     .hosting_fig
     {
-        margin: 0;
+        margin: initial;
+        margin: 0 1em 0 1em;
     }
 
     .hosting_img
@@ -744,11 +762,11 @@ span:hover
     .show_more
     {
         margin:initial;
-        padding: 2em 1em 2em 1em;
+        padding: 1em 2em 0 2em;
     }
 }
 
-@media screen and (min-width: 200px) and (max-width:1000px) /* Version mobile (600px) et Tablette (1000px) */
+@media screen and (min-width: 200px) and (max-width:1366px) /* Version mobile (600px) et Tablette (1000px) */
 /* Section Hebergements */
 {
     .hosting_section
@@ -757,17 +775,24 @@ span:hover
         padding: initial;
     }
 
+    .hosting_title
+    {
+        margin-left: 1em;
+    }
+
     .hosting_block
     {
         background-color: white;
         padding: initial;
         width: initial;
+        margin-right: initial;
     }
 
     .hosting_articles
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0 1em 0 1em;
     }
 
 /* Aside */ 
@@ -794,7 +819,8 @@ span:hover
     }
     .aside_options
     {
-        margin-top: 0em;
+        margin: initial;
+        margin: 0 1em 1em 1em;
     }
 }
 
@@ -804,7 +830,7 @@ span:hover
 
    .activities_section
     {
-        padding: 1em 1em 0 1em;
+        padding: 1em 2em 0 2em;
     }
 
     .grid_block
@@ -833,13 +859,14 @@ span:hover
     }
 }
 
-@media screen and (min-width: 600px) and (max-width:1000px) /* Version Tablette */
+@media screen and (min-width: 600px) and (max-width:1366px) /* Version Tablette */
 /* Section Activités */ 
 {
     
     .activities_section
     {
         height: 1050px;
+        padding-left: 2em;
     }
 
     .grid_block
@@ -855,6 +882,7 @@ span:hover
     .grid-item-2
     {
         grid-area: 1/3/3/5 ;
+        padding-bottom: 2em;
     }
 
     .grid-item-3
@@ -875,10 +903,11 @@ span:hover
     .grid-item-6
     {
         grid-area: 6/1/7/3;
+        padding-top: initial;
     }
 }
 
-@media screen and (min-width: 200px) and (max-width:1000px) /* Version Tablette */
+@media screen and (min-width: 200px) and (max-width:1366px) /* Version Tablette */
 {
 /* Footer */
 
@@ -890,7 +919,8 @@ span:hover
     .footer_block
     {
         flex-direction: column;
-        padding-top: 1em ;
+        padding:initial;
+        padding-left: 2em;
     }
 }
 
