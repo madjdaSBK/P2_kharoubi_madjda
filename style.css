@@ -767,7 +767,7 @@ span:hover
     .show_more
     {
         margin:initial;
-        padding: 1em 2em 0 2em;
+        padding: 1em 1em 0 1em;
     }
 }
 
@@ -791,13 +791,18 @@ span:hover
         padding: initial;
         width: initial;
         margin-right: initial;
+        padding: 0 1em 0 1em;
     }
 
     .hosting_articles
     {
         display: flex;
         justify-content: space-between;
-        padding: 0 1em 0 1em;
+    }
+
+    .show_more
+    {
+        margin-left: initial;
     }
 
 /* Aside */ 
@@ -835,7 +840,7 @@ span:hover
 
    .activities_section
     {
-        padding: 1em 2em 0 2em;
+        padding: initial;
     }
 
     .grid_block
@@ -847,12 +852,13 @@ span:hover
 
     .activities_title
     {
-        padding: 0;
+        padding: 16px 0 0 16px;
     }
 
     .grid-item
     {
         padding:initial;
+        padding: 0 2em 0 2em;
         margin:1em 0 2em 0;
     }
 
@@ -871,12 +877,15 @@ span:hover
     .activities_section
     {
         height: 1050px;
-        padding-left: 2em;
+        padding: initial;
+        margin: initial;
+        padding: 0 1em 0 1em;
     }
 
     .grid_block
     {
         grid-template-rows: 40% 10% 50% 40% 10% 50%;
+        padding: 0 1em 0 1em;
     }
 
     .grid-item-1
