@@ -1,6 +1,4 @@
-/* Partie CSS */
-
-/* CSS général  */
+/* Partie CSS général */
 
 @font-face {
     font-family: 'ralewayregular';
@@ -83,6 +81,7 @@ a:visited {
   border-top: 2px solid #0065fc;
   padding-top: 3em;
 }
+
 /* Section Recherche */
 
 .search_section
@@ -101,11 +100,6 @@ a:visited {
 }
 
 /* Formulaire de recherche */
-
-form
-{
-    width: 300px;
-}
 
 .formulary
 {
@@ -127,6 +121,11 @@ form
     height: 25px;
 }
 
+.input
+{
+    display: flex;
+}
+
 .formulary_input
 {
     font-weight: bold;
@@ -134,7 +133,6 @@ form
     border-right: none;
     border-left: none;
     padding-left: 14px;
-    width: 100%;
 }
 
 .formulary_button
@@ -144,7 +142,6 @@ form
     background-color: #0065FC;
     border: 1px #0065FC solid;
     border-radius: 0 15px 15px 0;
-    margin-left: -20px;
     cursor: pointer;
 }
 
@@ -280,7 +277,7 @@ span:hover
 
 .hosting_title
 {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .hosting_img
@@ -304,8 +301,11 @@ span:hover
     border-radius: 15px;
     padding: 5px; 
     box-shadow: 0 0px 15px rgb(206, 205, 205);
-    margin: 1em;
+    margin: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
     cursor: pointer;
+    
 }
 
 .hosting_figcaption
@@ -335,7 +335,7 @@ span:hover
 
 .show_more
 {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .hosting_fig:hover 
@@ -389,6 +389,7 @@ span:hover
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0px 15px rgb(206, 205, 205);
+    margin: 0;
     margin: 1em 1em 2em 1em;
     padding: 5px;
     height: 150px;
@@ -397,12 +398,21 @@ span:hover
 
 .aside_figcaption
 {
-    margin-left: 1.5em;
+    margin: 0.5em 0 0 1em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside_img_title
+{
+    margin-bottom: initial;
+    margin-top: 0;
 }
 
 .aside_text
 {
-    margin-top: -1em;
+    margin: initial;
 }
 
 .aside_icon
@@ -445,6 +455,7 @@ span:hover
     border-radius: 15px;
     box-shadow: 1px 1px 0px rgb(226, 226, 226);
     box-sizing: content-box;
+    margin: 0;
     cursor: pointer;
 }
 
@@ -546,7 +557,7 @@ span:hover
     color:#0065FC ;
 }
 
-            /* Partie Responsive */
+/* Partie Responsive */
 
 /* Header */
 
@@ -722,20 +733,12 @@ span:hover
     .hosting_section
     {
         flex-direction: column-reverse;
-        padding: initial;
     }
     
     .hosting_block
     {
         background-color: white;
-        padding: initial;
         width: initial;
-        margin-right: initial;
-    }
-
-    .hosting_header
-    {
-        padding: 1em 1em 0 1em;
     }
 
     .hosting_title
@@ -748,17 +751,6 @@ span:hover
         flex-direction:column;
     }
 
-    .hosting_options
-    {
-        margin-bottom: 1em;
-    }
-
-    .hosting_fig
-    {
-        margin: initial;
-        margin: 0 1em 0 1em;
-    }
-
     .hosting_img
     {
         width: 100%;
@@ -767,7 +759,7 @@ span:hover
     .show_more
     {
         margin:initial;
-        padding: 1em 1em 0 1em;
+        padding-top: 1em;
     }
 }
 
@@ -797,13 +789,26 @@ span:hover
     .hosting_articles
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    .hosting_fig
+    {
+        margin: initial;
+    }
+
+    .hosting_options
+    {
+        margin-bottom: 1em;
     }
 
     .show_more
     {
-        margin-left: initial;
+        margin:initial;
+        padding-top: 1em;
     }
+
+
 
 /* Aside */ 
     .aside
@@ -815,7 +820,7 @@ span:hover
     .aside_block
     {
         margin: initial;
-        padding: 1em 1em 1em 1em;
+        padding: 0 1em 0 1em;
     }
     
     .aside_title
@@ -830,7 +835,7 @@ span:hover
     .aside_options
     {
         margin: initial;
-        margin: 0 1em 1em 1em;
+        margin-bottom:1em;
     }
 }
 
@@ -840,7 +845,7 @@ span:hover
 
    .activities_section
     {
-        padding: initial;
+        padding: 1em 1em 0 1em;
     }
 
     .grid_block
@@ -852,13 +857,12 @@ span:hover
 
     .activities_title
     {
-        padding: 16px 0 0 16px;
+        padding: 0;
     }
 
     .grid-item
     {
         padding:initial;
-        padding: 0 2em 0 2em;
         margin:1em 0 2em 0;
     }
 
@@ -876,16 +880,19 @@ span:hover
     
     .activities_section
     {
+        padding: 1em 0 0 1em;
         height: 1050px;
-        padding: initial;
-        margin: initial;
-        padding: 0 1em 0 1em;
     }
 
     .grid_block
     {
         grid-template-rows: 40% 10% 50% 40% 10% 50%;
-        padding: 0 1em 0 1em;
+    }
+
+    .grid-item
+    {
+        padding: initial;
+        padding: 0 1em 2em 0;
     }
 
     .grid-item-1
@@ -934,7 +941,7 @@ span:hover
     {
         flex-direction: column;
         padding:initial;
-        padding-left: 2em;
+        padding-left: 1em;
     }
 
     .footer_column
