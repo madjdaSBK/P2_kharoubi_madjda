@@ -551,7 +551,7 @@ span:hover
 
 /* Header */
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile (600px) et Tablette (1000px) */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile Tablette */
 {
   .header_block {
     display: grid;
@@ -715,7 +715,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile (600px) */
+@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
 
 /* Section Hebergements */
 {
@@ -752,7 +752,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile (600px) et Tablette (1000px) */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 
 /* Section Hebergements */
 {
@@ -827,7 +827,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile (600px) */
+@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
 {
 /* Section Activités */ 
 
@@ -916,7 +916,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version Tablette */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 {
 /* Footer */
 
