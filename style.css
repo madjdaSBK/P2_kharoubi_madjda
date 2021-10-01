@@ -753,6 +753,7 @@ span:hover
 }
 
 @media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile (600px) et Tablette (1000px) */
+
 /* Section Hebergements */
 {
     .hosting_section
