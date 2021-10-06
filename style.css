@@ -294,8 +294,7 @@ span:hover
     box-shadow: 0 0px 15px rgb(206, 205, 205);
     margin: 0;
     margin: 0 1em 1em 2em;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .hosting_figcaption
@@ -549,10 +548,11 @@ span:hover
 
 /* Partie Responsive */
 
-/* Header */
-
 @media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile Tablette */
 {
+
+/* Header */
+
   .header_block {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -649,11 +649,6 @@ span:hover
     {
         justify-content: center;
         width: 100%;
-    }
-
-    .formulary_icon
-    {
-        
     }
 
     .formulary_button
