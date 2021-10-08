@@ -10,7 +10,7 @@
 
 *
 {
-    font-family: raleway ;
+    font-family: 'ralewayregular', 'Times New Roman', Arial, Helvetica, sans-serif ;
 }
 
 html, body
@@ -22,6 +22,10 @@ html, body
 a:link
 {
     text-decoration: none;
+}
+
+a:visited {
+  color: rgb(32, 32, 32);
 }
 
 /* Header */
@@ -44,24 +48,20 @@ a:link
   padding: 5px 10px 10px 40px;
 }
 
-.signup {
-  color: #0065fc;
-  padding: 5px 10px 10px 40px;
-}
-
 .hosting_link,
 .activities_link {
   color: rgb(32, 32, 32);
   padding:20px;
 }
 
+.signup {
+  color: #0065fc;
+  padding: 5px 10px 10px 40px;
+}
+
 .signup_link
 {
   padding:20px;
-}
-
-a:visited {
-  color: rgb(32, 32, 32);
 }
 
 .hosting_link:hover {
@@ -548,7 +548,7 @@ span:hover
 
 /* Partie Responsive */
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile Tablette */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile & tablette */
 {
 
 /* Header */
@@ -710,7 +710,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
+@media screen and (min-width: 350px) and (max-device-width:600px) /* Version mobile */
 
 /* Section Hebergements */
 {
@@ -747,7 +747,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
+@media screen and (min-device-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 
 /* Section Hebergements */
 {
@@ -822,7 +822,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
+@media screen and (min-device-width: 350px) and (max-device-width:600px) /* Version mobile */
 {
 /* Section Activités */ 
 
@@ -857,7 +857,8 @@ span:hover
     }
 }
 
-@media screen and (min-width: 600px) and (max-width:1366px) /* Version Tablette */
+@media screen and (min-device-width: 600px) and (max-width:1366px) /* Version Tablette */
+
 /* Section Activités */ 
 {
     
@@ -911,7 +912,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
+@media screen and (min-device-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 {
 /* Footer */
 
