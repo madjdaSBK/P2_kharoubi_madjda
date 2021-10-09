@@ -908,11 +908,6 @@ span:hover
 @media screen and (min-device-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 {
 /* Footer */
-
-    .footer
-    {
-        margin-top: 2em;
-    }
     
     .footer_block
     {
