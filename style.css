@@ -107,7 +107,7 @@ a:visited {
     margin: 1.5em 0 1.5em 0;
 }
 
-.formulary_icon
+.fa-map-marker-alt
 {
     display: flex;
     justify-content: center;
@@ -214,7 +214,7 @@ a:visited {
     align-items: center;
 }
 
-.info_icon
+.fa-info
 {
     display: flex;
     justify-content: center;
@@ -260,17 +260,14 @@ span:hover
     flex-direction: row;
 }
 
-.hosting_header
+.hosting_title
 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.hosting_title
-{
     margin-left: 32px;
 }
+
 
 .hosting_img
 {
@@ -518,13 +515,9 @@ span:hover
 
 /* Footer */
 
-.footer
-{
-    background-color: #F2F2F2;
-}
-
 .footer_block
 {
+    background-color: #F2F2F2;
     display: flex;
     padding: 1em 0 0 3em;
 }
@@ -926,6 +919,7 @@ span:hover
         flex-direction: column;
         padding:initial;
         padding-left: 1em;
+        margin-top: 3em;
     }
 
     .footer_column
