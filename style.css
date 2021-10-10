@@ -2,15 +2,23 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('police/raleway-regular-webfont.woff2') format('woff2'),
-         url('police/raleway-regular-webfont.woff') format('woff');
+    src: url('polices/raleway-regular-webfont.woff2') format('woff2'),
+         url('polices/raleway-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('polices/raleway-medium-webfont.woff2') format('woff2'),
+         url('polices/raleway-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 *
 {
-    font-family: 'ralewayregular', 'Times New Roman', Arial, Helvetica, sans-serif ;
+    font-family: 'ralewaymedium', 'ralewayregular', Arial, Helvetica, sans-serif ;
 }
 
 html, body 
@@ -606,12 +614,12 @@ span:hover
     border-top:none;
   }
   
-  .hosting:hover
+  .hosting:focus
   {
     border-bottom-color:#0065fc;
   }
   
-  .activities:hover {
+  .activities:focus {
     border-bottom-color:#0065fc;
   }
 
@@ -703,7 +711,7 @@ span:hover
     }
 }
 
-@media screen and (min-width: 350px) and (max-device-width:600px) /* Version mobile */
+@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
 
 /* Section Hebergements */
 {
@@ -740,7 +748,7 @@ span:hover
     }
 }
 
-@media screen and (min-device-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 
 /* Section Hebergements */
 {
@@ -815,7 +823,7 @@ span:hover
     }
 }
 
-@media screen and (min-device-width: 350px) and (max-device-width:600px) /* Version mobile */
+@media screen and (min-width: 350px) and (max-width:600px) /* Version mobile */
 {
 /* Section Activités */ 
 
@@ -850,7 +858,7 @@ span:hover
     }
 }
 
-@media screen and (min-device-width: 600px) and (max-width:1366px) /* Version Tablette */
+@media screen and (min-width: 600px) and (max-width:1366px) /* Version Tablette */
 
 /* Section Activités */ 
 {
@@ -905,7 +913,7 @@ span:hover
     }
 }
 
-@media screen and (min-device-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
+@media screen and (min-width: 350px) and (max-width:1366px) /* Version mobile et Tablette */
 {
 /* Footer */
     
